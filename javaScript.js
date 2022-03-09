@@ -1,5 +1,5 @@
-var listOfSavedWords = [];
-var wordsInput = document.getElementById("wordAdd");
+let listOfSavedWords = [];
+let wordsInput = document.getElementById("wordAdd");
 
 function buildWordList() {
     listOfSavedWords.push(wordsInput.value);
@@ -7,14 +7,14 @@ function buildWordList() {
 }
 
 function showList() {
-    var messageBox = document.getElementById("displayMessage");
+    let messageBox = document.getElementById("displayMessage");
     wordsInput.value = "";
     messageBox.innerHTML = "";
     messageBox.innerHTML += "My dictionary words: " + listOfSavedWords.join(", ");
 }
 
 function checkWordList() {
-    var checkInput = document.getElementById("wordCheck");
+    let checkInput = document.getElementById("wordCheck");
     if (listOfSavedWords.indexOf(checkInput.value) !== -1) {
         document.getElementById("displayOutcome").innerHTML = "Word exists!";
         checkInput.value = "";
