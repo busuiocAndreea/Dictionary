@@ -1,6 +1,5 @@
 var listOfSavedWords = [];
 var wordsInput = document.getElementById("wordAdd");
-var messageBox = document.getElementById("displayMessage");
 
 function buildWordList() {
     listOfSavedWords.push(wordsInput.value);
