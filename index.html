@@ -1,0 +1,29 @@
+<div class="text-center">
+	<br>
+	<h1>My dictionary</h1>
+	<div class="container">
+		<div class="card">
+			<form>
+				<label for="title">Add words to your dictionary:</label>
+				<input id="wordAdd" type="text">
+				<input type="button" class="btn btn-success btn-secondary btn" value="Add" onclick=" return buildWordList()"> 
+      </form>
+			<div id="displayMessage"></div>
+		</div>
+	</div>
+</div>
+<div class="text-center">
+	<br>
+	<h1>Word Checklist</h1>
+	<div class="container">
+		<div class="card">
+			<form>
+				<label for="title">Insert the word you want to check:</label>
+				<input id="wordCheck" type="text">
+				<input type="button" class="btn btn-success btn-danger btn" value="Search" onclick=" return checkWordList()"> 
+      </form>
+			<div id="displayOutcome"></div>
+		</div>
+	</div>
+</div>
+  
